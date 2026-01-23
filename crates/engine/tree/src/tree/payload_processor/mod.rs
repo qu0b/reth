@@ -798,6 +798,8 @@ impl PayloadExecutionCache {
     /// - No other tasks are currently using it (checked via Arc reference count)
     #[instrument(level = "debug", target = "engine::tree::payload_processor", skip(self))]
     pub(crate) fn get_cache_for(&self, parent_hash: B256) -> Option<SavedCache> {
+        return None;
+
         let start = Instant::now();
         let cache = self.inner.read();
 
