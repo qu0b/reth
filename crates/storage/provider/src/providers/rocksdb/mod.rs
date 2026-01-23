@@ -6,6 +6,5 @@ mod provider;
 
 pub(crate) use provider::{PendingRocksDBBatches, RocksDBWriteCtx};
 pub use provider::{
-    PruneShardOutcome, RocksDBBatch, RocksDBBuilder, RocksDBProvider, RocksDBRawIter,
-    RocksDBTableStats, RocksTx,
+    RocksDBBatch, RocksDBBuilder, RocksDBProvider, RocksDBRawIter, RocksDBTableStats, RocksTx,
 };
